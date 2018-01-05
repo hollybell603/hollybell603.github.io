@@ -3,7 +3,7 @@
     "name": "My Site",
     "currentPage": "index.html",
     "versionFirst": "4.0.14",
-    "uniqCompNum": 32,
+    "uniqCompNum": 34,
     "versionPublish": "4.3.2",
     "theme": {
       "name": "mobirise4",
@@ -530,98 +530,6 @@
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "h2": {
-              "text-align": "left"
-            },
-            "h4": {
-              "text-align": "left",
-              "font-weight": "500"
-            },
-            "p": {
-              "color": "#767676",
-              "text-align": "left"
-            },
-            ".block-content": {
-              "display": "-webkit-flex",
-              "flex-direction": "column",
-              "-webkit-flex-direction": "column",
-              "word-break": "break-word"
-            },
-            ".media": {
-              "margin": "initial",
-              "align-items": "center"
-            },
-            ".mbr-figure": {
-              "align-self": "flex-start",
-              "-webkit-align-self": "flex-start",
-              "-webkit-flex-shrink": "0",
-              "flex-shrink": "0"
-            },
-            ".card-img": {
-              "padding-right": "2rem",
-              "width": "auto"
-            },
-            ".card-img span": {
-              "font-size": "72px",
-              "color": "#707070"
-            },
-            "@media (min-width: 992px)": {
-              ".mbr-figure": {
-                "padding-right": "4rem",
-                "& when (@reverseContent)": {
-                  "padding-right": "0",
-                  "padding-left": "4rem"
-                }
-              },
-              ".media-container-row": {
-                "& when (@reverseContent)": {
-                  "-webkit-flex-direction": "row-reverse"
-                }
-              }
-            },
-            "@media (max-width: 991px)": {
-              ".mbr-figure": {
-                "padding-right": "0",
-                "padding-bottom": "1rem",
-                "margin-bottom": "2rem",
-                "& when (@reverseContent)": {
-                  "padding-bottom": "0",
-                  "margin-bottom": "0",
-                  "padding-top": "1rem",
-                  "margin-top": "2rem"
-                }
-              },
-              ".media-container-row": {
-                "& when (@reverseContent)": {
-                  "-webkit-flex-direction": "column-reverse"
-                }
-              }
-            },
-            "@media (max-width: 300px)": {
-              ".card-img span": {
-                "font-size": "40px !important"
-              }
-            }
-          },
-          "_name": "features11",
-          "_customHTML": "<section class=\"features11\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text Header\" name=\"showTextHead\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"reverseContent\">\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"20\" max=\"80\" step=\"5\" value=\"50\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">   \n        <div class=\"col-md-12\">\n            <div class=\"media-container-row\">\n                <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                    <img src=\"@PROJECT_PATH@/assets/images/941139-559250277450398-874064512-n-1-960x720.jpg\" alt=\"Mobirise\" title>\n                </div>\n                <div class=\" align-left\">\n                    <h2 class=\"mbr-title pt-2 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">太平島簡介</h2>\n                    <div class=\"mbr-section-text\">\n                        <p class=\"mbr-text mb-5 pt-3 mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">南沙太平島 \n<br>\n<br>南沙太平島又稱黃山馬礁（英文：Itu Apa Island），位於南海南沙群島北部中央鄭和群礁大型環礁上的西北角，位居南海西側航道的東邊，是南沙群島中最大的島嶼，面積為0.49平方公里。東距中洲礁約3.1海浬（約6公里），東距敦謙沙洲約7.1海浬（約13公里），西南距南薰礁16海浬（約30公里）。目前由中華民國實際控制，行政上由中華民國高雄市旗津區管轄，與高雄港 相距約1,600公里。 \n<br>\n<br>\n<br>歷史 \n<br>\n<br>早在13世紀，中國漁民就在太平島附近海域作業，到近代隨著國力衰落中國遂喪失了對其的控制權。 \n<br>1907年，大批日本漁民進入南沙。 \n<br>1929年4月，因島上蘊藏的磷礦已開採殆盡，而且受到世界經濟危機的影響，日商宣告停止開採，全部人員撤返日本。 \n<br>1933年4月10日，法軍佔領太平島，趕走島上日商與台灣勞工。 \n<br>1935年初，日本人平田末治和台灣總督府設立開發太平島的開洋興行株式會社，同年4月，法國以軍艦派遣30名越南人長住太平島。 \n<br>1936年12月，日本的開洋興業公司非法派員探查磷礦。 \n<br>1938年8月9日，日本派遣軍艦，建立石碑記載日本人開發經過；10月30日，日本派遣士兵和臺灣勞工登陸；12月7日則有更多人登陸。 \n<br>1939年4月，日軍攻佔太平島，並將其更名為長島，納入高雄市管理。在這期間，日本曾在島上駐紮過陸戰隊、氣象情報隊、通信派遣隊和偵察機部隊。 \n<br>1944年，日本在島上建立了潛艇基地。 \n<br>1945年12月12日，中華民國政府設立「南沙管理處」隸屬廣東省政府管轄，並修建電台、氣象台。 \n<br>1946年10月5日，法國軍艦Chevreud號登陸南沙群島南威島和太平島，在島上建立石碑，當時中華民國政府提出抗議，並與法方決定於該月及翌年1月4日進行談判，但因越南戰爭緊張，法國自動放棄談判。 \n<br>1946年11月24日，中華民國政府派出「中業號」、「永興號」、「太平號」、「中建號」等4艘軍艦，由指揮官林遵、姚汝鈺率領南下，並有內政及陸海空各部代表隨往視察，會同海軍在廣州出發，前往西沙、南沙進駐接收。12月12日，接收南沙群島的「太平」、「中業」兩艦由林遵率領，抵達太平島。為了紀念「太平」艦接收該島，即以「太平」為該島命名。在島西南方的防波堤末端豎立起「太平島」石碑，並在島之東端，另立「南沙群島太平島」石碑。立碑完後，乃於碑旁舉行接收和升旗典禮。在太平島設立南沙群島管理處，隸屬於廣東省政府管轄。 \n<br>1950年，菲律賓民間人士進佔南沙太平島及其他諸島，大肆盜採磷礦。 \n<br>1952年的對日和約中規定，日本放棄對其之主權。 \n<br>1956年，中華民國海軍先後派出立威部隊、威遠部隊和寧遠部隊三次「威力偵巡」南沙群島。在巡弋過程中，曾在太平島、南威島、西月島重樹石碑、舉行升旗禮，並改編為「南沙守備區」，改派海軍陸戰隊守備太平島。 \n<br>立威部隊：由太和、太倉兩軍艦組成特遣艦隊，日期是6月2日至6月14日。登陸3個島：太平島、南威島、西月島。巡察5個島和1個沙洲：南子礁（今南子島）、北子礁（今北子島）、中業島、南鑰島、鴻庥島與敦謙沙洲。經過2個暗沙：逍遙暗沙、永登暗沙，以及3個群礁：鄭和群礁、中業群礁和尹慶群礁；另外也經過12個礁和1個沙洲：渚碧礁、大現礁、小現礁、福祿寺礁、西礁、中礁、東礁、華陽礁、日積礁、相生礁（火艾礁）、常瀨礁（蒙自礁）和揚信沙洲。 \n<br>威遠部隊：由太康、太和兩軍艦組成特遣艦隊，之後中肇艦參加，日期是6月29日至7月22日。先後到過太平島、中業島、敦謙沙洲、西月島、鴻庥島、南威島、南鑰島、南子礁、北子礁。 \n<br>寧遠部隊：由太和、永順兩軍艦組成特遣艦隊。日期是9月24日至10月5日。9月底到太平島、鴻庥島、敦謙沙洲，10月初到南鑰島、中業島、南子礁、北子礁。 \n<br>1959年，島上官兵自臺灣迎奉千手觀世音菩薩來此祭祀，修建觀音堂。 \n<br>1960年10月31日，將原有之氣象站擴充為氣象台，同年9月9日設立郵政代辦所一處，歸高雄郵局管轄，迄1963年7月，改隸台北市郵局管轄。 \n<br>1963年，中華民國行政院退輔會於太平島設立「南海開發小組」，從事廢鐵打撈與磷礦開採，迄1968年擴編為「南海資源開發所」。 \n<br>1967年10月，中國青年反共救國團「暑期育樂活動南疆遠航隊」設立「南疆屏障」石碑乙座。 \n<br>1975年，中華民國政府針對菲律賓、越南、馬來西亞相繼登陸南沙群島，發表「對南沙群島擁有唯一合法主權」之嚴正聲明。 \n<br>1980年1月12日，內政部地政司司長王杏泉代表部長許水德，登島設立「南疆鎖鑰」石碑乙座，並重申中華民國對南海之主權；2月16日，行政院核定高雄市成立管理委員會，接管太平島，隸屬高雄市旗津區，設立「漁業工作站」。 \n<br>1987年，中華民國設立「台澎地區漁民服務站」，推展各項漁民服務工作。 \n<br>1992年6月12日，中華民國內政部負責籌組「南海小組」。 \n<br>2000年1月28日，中華民國成立「海岸巡防署」，接管太平島。 \n<br>2003年8月16日，中華民國內政部長余政憲率領行政院經建會副主委張景森、研考會副主委蔡丁貴、海巡署副署長游乾賜、高雄市副市長林永堅等一行人前往視察，並舉行一等衛星控制點設置動土典禮。 \n<br>2005年，中華民國原本專責南海政策的南海小組，由國安會「周邊海域情勢會報」取代，作為處理台灣週遭爭議海域的主管機制。 \n<br>2006年，中華民國政府為便利由台灣本島運輸補給和醫療救護，中華民國國防部開始著手構建太平專案（太平島機場專案）工程，但卻引發部份破壞生態的爭議。 \n<br>2007年3月3日，高雄市政府海洋局為保護當地活動之海龜及響應國際間對海龜保育工作的重視，依漁業法第45條規定公告劃設太平島海龜繁殖保育區，範圍以太平島為中心，陸域產卵棲地從沙灘至樹林外側，海域重要棲息環境自潮間帶和低潮線至12浬處。11月7日，中華民國國防部長李天羽到立法院國防委員會備詢時提到，正在預做規劃新建跑道採海底沉箱方式再加長。12月12日，太平專案工程完工，共費時273個工作天</p>\n                    </div>\n\n                    <div class=\"block-content\" mbr-if=\"showTextHead||showText||showIcons\">\n                        <div class=\"card p-3 pr-3\">\n                            <div class=\"media\">\n                                <div class=\" align-self-center card-img pb-3\" mbr-if=\"showIcons\">\n                                    <span mbr-icon class=\"mbr-iconfont mbri-extension\" style=\"font-size: 1px;\"></span>\n                                </div>     \n                                <div class=\"media-body\">\n                                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTextHead\"></h4>\n                                </div>\n                            </div>                \n\n                            <div class=\"card-box\">\n                                <p class=\"block-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"></p>\n                            </div>\n                        </div>\n\n                        <div class=\"card p-3 pr-3\" mbr-if=\"cardsAmount > 1\">\n                            <div class=\"media\">\n                                <div class=\"align-self-center card-img pb-3\" mbr-if=\"showIcons\">\n                                    <span mbr-icon class=\"mbr-iconfont mbri-drag-n-drop2\" style=\"font-size: 1px;\"></span>\n                                </div>     \n                                <div class=\"media-body\">\n                                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTextHead\"></h4>\n                                </div>\n                            </div>                \n\n                            <div class=\"card-box\">\n                                <p class=\"block-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"></p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div> \n    </div>          \n</section>",
-          "_cid": "qx5tJYX2Dl",
-          "_anchor": "features11-u",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
             "background": "@bgColor",
             ".images-container.container-fluid": {
               "padding": "0"
@@ -675,6 +583,24 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">太平島簡介</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">南沙太平島 \n<div>\n</div><div>南沙太平島又稱黃山馬礁（英文：Itu Apa Island），位於南海南沙群島北部中央鄭和群礁大型環礁上的西北角，位居南海西側航道的東邊，是南沙群島中最大的島嶼，面積為0.49平方公里。東距中洲礁約3.1海浬（約6公里），東距敦謙沙洲約7.1海浬（約13公里），西南距南薰礁16海浬（約30公里）。目前由中華民國實際控制，行政上由中華民國高雄市旗津區管轄，與高雄港 相距約1,600公里。 \n</div><div>\n</div><div>\n</div><div>歷史 \n</div><div>\n</div><div>早在13世紀，中國漁民就在太平島附近海域作業，到近代隨著國力衰落中國遂喪失了對其的控制權。 \n</div><div>1907年，大批日本漁民進入南沙。 \n</div><div>1929年4月，因島上蘊藏的磷礦已開採殆盡，而且受到世界經濟危機的影響，日商宣告停止開採，全部人員撤返日本。 \n</div><div>1933年4月10日，法軍佔領太平島，趕走島上日商與台灣勞工。 \n</div><div>1935年初，日本人平田末治和台灣總督府設立開發太平島的開洋興行株式會社，同年4月，法國以軍艦派遣30名越南人長住太平島。 \n</div><div>1936年12月，日本的開洋興業公司非法派員探查磷礦。 \n</div><div>1938年8月9日，日本派遣軍艦，建立石碑記載日本人開發經過；10月30日，日本派遣士兵和臺灣勞工登陸；12月7日則有更多人登陸。 \n</div><div>1939年4月，日軍攻佔太平島，並將其更名為長島，納入高雄市管理。在這期間，日本曾在島上駐紮過陸戰隊、氣象情報隊、通信派遣隊和偵察機部隊。 \n</div><div>1944年，日本在島上建立了潛艇基地。 \n</div><div>1945年12月12日，中華民國政府設立「南沙管理處」隸屬廣東省政府管轄，並修建電台、氣象台。 \n</div><div>1946年10月5日，法國軍艦Chevreud號登陸南沙群島南威島和太平島，在島上建立石碑，當時中華民國政府提出抗議，並與法方決定於該月及翌年1月4日進行談判，但因越南戰爭緊張，法國自動放棄談判。 \n</div><div>1946年11月24日，中華民國政府派出「中業號」、「永興號」、「太平號」、「中建號」等4艘軍艦，由指揮官林遵、姚汝鈺率領南下，並有內政及陸海空各部代表隨往視察，會同海軍在廣州出發，前往西沙、南沙進駐接收。12月12日，接收南沙群島的「太平」、「中業」兩艦由林遵率領，抵達太平島。為了紀念「太平」艦接收該島，即以「太平」為該島命名。在島西南方的防波堤末端豎立起「太平島」石碑，並在島之東端，另立「南沙群島太平島」石碑。立碑完後，乃於碑旁舉行接收和升旗典禮。在太平島設立南沙群島管理處，隸屬於廣東省政府管轄。 \n</div><div>1950年，菲律賓民間人士進佔南沙太平島及其他諸島，大肆盜採磷礦。 \n</div><div>1952年的對日和約中規定，日本放棄對其之主權。 \n</div><div>1956年，中華民國海軍先後派出立威部隊、威遠部隊和寧遠部隊三次「威力偵巡」南沙群島。在巡弋過程中，曾在太平島、南威島、西月島重樹石碑、舉行升旗禮，並改編為「南沙守備區」，改派海軍陸戰隊守備太平島。 \n</div><div>立威部隊：由太和、太倉兩軍艦組成特遣艦隊，日期是6月2日至6月14日。登陸3個島：太平島、南威島、西月島。巡察5個島和1個沙洲：南子礁（今南子島）、北子礁（今北子島）、中業島、南鑰島、鴻庥島與敦謙沙洲。經過2個暗沙：逍遙暗沙、永登暗沙，以及3個群礁：鄭和群礁、中業群礁和尹慶群礁；另外也經過12個礁和1個沙洲：渚碧礁、大現礁、小現礁、福祿寺礁、西礁、中礁、東礁、華陽礁、日積礁、相生礁（火艾礁）、常瀨礁（蒙自礁）和揚信沙洲。 \n</div><div>威遠部隊：由太康、太和兩軍艦組成特遣艦隊，之後中肇艦參加，日期是6月29日至7月22日。先後到過太平島、中業島、敦謙沙洲、西月島、鴻庥島、南威島、南鑰島、南子礁、北子礁。 \n</div><div>寧遠部隊：由太和、永順兩軍艦組成特遣艦隊。日期是9月24日至10月5日。9月底到太平島、鴻庥島、敦謙沙洲，10月初到南鑰島、中業島、南子礁、北子礁。 \n</div><div>1959年，島上官兵自臺灣迎奉千手觀世音菩薩來此祭祀，修建觀音堂。 \n</div><div>1960年10月31日，將原有之氣象站擴充為氣象台，同年9月9日設立郵政代辦所一處，歸高雄郵局管轄，迄1963年7月，改隸台北市郵局管轄。 \n</div><div>1963年，中華民國行政院退輔會於太平島設立「南海開發小組」，從事廢鐵打撈與磷礦開採，迄1968年擴編為「南海資源開發所」。 \n</div><div>1967年10月，中國青年反共救國團「暑期育樂活動南疆遠航隊」設立「南疆屏障」石碑乙座。 \n</div><div>1975年，中華民國政府針對菲律賓、越南、馬來西亞相繼登陸南沙群島，發表「對南沙群島擁有唯一合法主權」之嚴正聲明。 \n</div><div>1980年1月12日，內政部地政司司長王杏泉代表部長許水德，登島設立「南疆鎖鑰」石碑乙座，並重申中華民國對南海之主權；2月16日，行政院核定高雄市成立管理委員會，接管太平島，隸屬高雄市旗津區，設立「漁業工作站」。 \n</div><div>1987年，中華民國設立「台澎地區漁民服務站」，推展各項漁民服務工作。 \n</div><div>1992年6月12日，中華民國內政部負責籌組「南海小組」。 \n</div><div>2000年1月28日，中華民國成立「海岸巡防署」，接管太平島。 \n</div><div>2003年8月16日，中華民國內政部長余政憲率領行政院經建會副主委張景森、研考會副主委蔡丁貴、海巡署副署長游乾賜、高雄市副市長林永堅等一行人前往視察，並舉行一等衛星控制點設置動土典禮。 \n</div><div>2005年，中華民國原本專責南海政策的南海小組，由國安會「周邊海域情勢會報」取代，作為處理台灣週遭爭議海域的主管機制。 \n</div><div>2006年，中華民國政府為便利由台灣本島運輸補給和醫療救護，中華民國國防部開始著手構建太平專案（太平島機場專案）工程，但卻引發部份破壞生態的爭議。 \n</div><div>2007年3月3日，高雄市政府海洋局為保護當地活動之海龜及響應國際間對海龜保育工作的重視，依漁業法第45條規定公告劃設太平島海龜繁殖保育區，範圍以太平島為中心，陸域產卵棲地從沙灘至樹林外側，海域重要棲息環境自潮間帶和低潮線至12浬處。11月7日，中華民國國防部長李天羽到立法院國防委員會備詢時提到，正在預做規劃新建跑道採海底沉箱方式再加長。12月12日，太平專案工程完工，共費時273個工作天</div></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qFRkZqg8Rt",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content4-x"
         }
       ]
     }
